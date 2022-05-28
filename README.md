@@ -40,12 +40,12 @@ rosbag play 2022-04-21-23-44-04.bag -r 1 --clock
 /raspicat_ws/src/raspicat_slam_navigation/launch/slam_remote_pc.launch'
 
 # .bagファイルの圧縮と解凍
-*　rosbag recordでbagファイルに保存しながら圧縮   
+* rosbag recordでbagファイルに保存しながら圧縮   
 rosbag record -j /cmd_vel /odom /scan /tf /tf_static   
-*　指定したbagファイルを圧縮   
+* 指定したbagファイルを圧縮   
 rosbag compress ~.bag   
 (圧縮前のファイルも.orig.bagとしてバックアップされるらしい)   
-*　指定したbagファイルを解凍(推奨)   
+* 指定したbagファイルを解凍(推奨)   
 rosbag decompress ~.bag   
 
 

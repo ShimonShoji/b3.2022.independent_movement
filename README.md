@@ -33,8 +33,8 @@ rosbag record -j /cmd_vel /odom /scan /tf /tf_static
 3.  roscore
 4.  rosparam set /use_sim_time true
 5.  roslaunch raspicat_slam_navigation slam_remote_pc.launch
-6.  osbagファイルがあるところ
-rosbag play 2022-04-21-23-44-04.bag -r 1 --clock
+6.  rosbagファイルがあるところ
+rosbag play ~.bag -r 1 --clock
 
 以下のファイルでパラメータ設定   
 /raspicat_ws/src/raspicat_slam_navigation/launch/slam_remote_pc.launch'

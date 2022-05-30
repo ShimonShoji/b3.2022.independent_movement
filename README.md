@@ -25,7 +25,7 @@ roslaunch raspicat_navigation raspicat_bringup.launch urg_ether:=false urg_usb:=
 2.Joystick controllerを接続している方   
 roslaunch raspicat_gamepad_controller logicool.launch   
 3.***Rspberry Pi側の /mnt/SSD***   
-rosbag record -j /cmd_vel /odom /scan /tf /tf_static
+rosbag record -j /cmd_vel /odom /scan /tf /tf_static   
 4. 外すときはsudo umonunt /mnt/SSD
 
 # .bgaをRvizで再生する

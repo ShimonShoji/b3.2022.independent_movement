@@ -26,6 +26,7 @@ roslaunch raspicat_navigation raspicat_bringup.launch urg_ether:=false urg_usb:=
 roslaunch raspicat_gamepad_controller logicool.launch   
 3.***Rspberry Pi側の /mnt/SSD***   
 rosbag record -j /cmd_vel /odom /scan /tf /tf_static
+4. 外すときはsudo umonunt /mnt/SSD
 
 # .bgaをRvizで再生する
 1.  rosbag　decompress　~.bag(解凍)
@@ -35,6 +36,7 @@ rosbag record -j /cmd_vel /odom /scan /tf /tf_static
 5.  roslaunch raspicat_slam_navigation slam_remote_pc.launch
 6.  rosbagファイルがあるところ
 rosbag play ~.bag -r 1 --clock
+7. rosrun map_server map_saver -f ~/map
 
 以下のファイルでパラメータ設定   
 /raspicat_ws/src/raspicat_slam_navigation/launch/slam_remote_pc.launch'

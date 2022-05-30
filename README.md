@@ -35,7 +35,7 @@ rosbag record -j /cmd_vel /odom /scan /tf /tf_static
 4.  rosparam set /use_sim_time true
 5.  roslaunch raspicat_slam_navigation slam_remote_pc.launch
 6.  rosbagファイルがあるところ
-rosbag play ~.bag -r 1 --clock
+rosbag play ~.bag -r 1 --clock   
 7. rosrun map_server map_saver -f ~/map
 
 以下のファイルでパラメータ設定   

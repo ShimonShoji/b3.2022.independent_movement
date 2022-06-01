@@ -14,7 +14,7 @@
 |製品HP|https://www.argocorp.com/cam/special/Velodyne/VLP-16.html|https://www.hokuyo-aut.co.jp/search/single.php?serial=21|
 
 # SSDのマウント設定
-1. ubuntuで 'sudo fdisk -l' (SSDの場所が/dev/sda1と分かる)
+1. ubuntuで sudo fdisk -l (SSDの場所が/dev/sda1と分かる)
 2. sudo mkdir /mnt/SSD
 3. sudo mount -o uid=1000,gid=1000 /dev/sda1 /mnt/SSD
 4. 外すときはsudo umonunt /mnt/SSD
@@ -25,7 +25,7 @@ roslaunch raspicat_navigation raspicat_bringup.launch urg_ether:=false urg_usb:=
 2.Joystick controllerを接続している方   
 roslaunch raspicat_gamepad_controller logicool.launch   
 3.***Rspberry Pi側の /mnt/SSD***   
-rosbag record -O 建物の名前.bag /cmd_vel /odom /scan /tf /tf_static   
+rosbag record -O ***建物の名前.bag*** /cmd_vel /odom /scan /tf /tf_static   
 4. 外すときはsudo umonunt /mnt/SSD
 
 # .bgaをRvizで再生する

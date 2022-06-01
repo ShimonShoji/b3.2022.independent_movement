@@ -19,7 +19,7 @@ raspicat_ws/src/raspicat_slam_navigation/launch/slam_remote_pc.launch
 
 * param name="stt" value="0.1"
 
-    直線1mで生じる向きの誤差許容量
+    回転1radで生じる向きの誤差許容量
 
 
 ## 追加パラメータ

@@ -14,7 +14,7 @@
 |製品HP|https://www.argocorp.com/cam/special/Velodyne/VLP-16.html|https://www.hokuyo-aut.co.jp/search/single.php?serial=21|
 
 # SSDのマウント設定
-1. ubuntuで sudo fdisk -l (SSDの場所が/dev/sda1と分かる)
+1. ubuntuで 'sudo fdisk -l' (SSDの場所が/dev/sda1と分かる)
 2. sudo mkdir /mnt/SSD
 3. sudo mount -o uid=1000,gid=1000 /dev/sda1 /mnt/SSD
 4. df -Tでマウント確認

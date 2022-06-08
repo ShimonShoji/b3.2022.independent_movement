@@ -34,14 +34,15 @@
 
 3.***Rspberry Pi側の /mnt/SSD***   
 
-    rosbag record -O ***建物の名前.bag*** /cmd_vel /odom /scan /tf /tf_static
+    rosbag record -O 建物の名前.bag /cmd_vel /odom /scan /tf /tf_static
 
-   `rosbag record -j -O ***建物の名前.bag*** /cmd_vel /odom /scan /tf /tf_static`(圧縮)
+   `rosbag record -j -O 建物の名前.bag /cmd_vel /odom /scan /tf /tf_static`(圧縮)
 
    
 4.`sudo umonunt /mnt/SSD`
 
-# .bagをRvizで再生する
+# .bag
+をRvizで再生する
 1.  `rosbag　decompress　~.bag`(解凍)
 2.  .bashrcのipをlocalhostに直す
 3.  `roscore`

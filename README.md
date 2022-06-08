@@ -26,22 +26,22 @@
 # rosbagを用いたmapping
 1.Raspberry Pi 4B 
 
-    `roslaunch raspicat_navigation raspicat_bringup.launch urg_ether:=false urg_usb:=true waypoint_navigation:=false urg_serial_port:=/dev/ttyACM0 `
+    roslaunch raspicat_navigation raspicat_bringup.launch urg_ether:=false urg_usb:=true waypoint_navigation:=false urg_serial_port:=/dev/ttyACM0 
 
 2.Joystick controllerを接続している方   
 
-    `roslaunch raspicat_gamepad_controller logicool.launch `
+    roslaunch raspicat_gamepad_controller logicool.launch
 
 3.***Rspberry Pi側の /mnt/SSD***   
 
-    `rosbag record -O ***建物の名前.bag*** /cmd_vel /odom /scan /tf /tf_static`
+    rosbag record -O ***建物の名前.bag*** /cmd_vel /odom /scan /tf /tf_static
 
    `rosbag record -j -O ***建物の名前.bag*** /cmd_vel /odom /scan /tf /tf_static`(圧縮)
 
    
 4.`sudo umonunt /mnt/SSD`
 
-# .bgaをRvizで再生する
+# .bagをRvizで再生する
 1.  `rosbag　decompress　~.bag`(解凍)
 2.  .bashrcのipをlocalhostに直す
 3.  `roscore`

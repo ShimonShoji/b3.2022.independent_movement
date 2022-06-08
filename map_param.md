@@ -29,6 +29,14 @@ raspicat_ws/src/raspicat_slam_navigation/launch/slam_remote_pc.launch
 
     グリッドセルで表現された各セルの値がこの値以上であれば障害物であると判断
 
+* param name="resampleThreshold" value="0.5"
+  
+  
+
+* param name="sigma" value="0.05"
+  
+
+
 ## その他
 
 * param name="map_update_interval" value="1.0"

@@ -41,8 +41,7 @@
    
 4.`sudo umonunt /mnt/SSD`
 
-# .bag
-をRvizで再生する
+# .bagをRvizで再生する
 1.  `rosbag　decompress　~.bag`(解凍)
 2.  .bashrcのipをlocalhostに直す
 3.  `roscore`
@@ -63,6 +62,17 @@
 (圧縮前のファイルも.orig.bagとしてバックアップされるらしい)   
 * 指定したbagファイルを解凍(推奨)   
 `rosbag decompress ~.bag`   
+
+# .bagファイルが取り出せなくなった方向け
+
+「fu○k SSDをマウントしたつもりがされていなかった」なんて人向けです
+
+1. ファイルアプリを開く
+2. 左のメニューからその他の場所を選択
+3. 下にある他のサーバーに接続に``sftp://192.168.12.1/``と打ち、接続
+4. みごとできましたぁ
+
+参考:https://www.indoorcorgielec.com/resources/raspberry-pi/raspberry-pi-ssh/
 
 
 

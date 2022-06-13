@@ -41,6 +41,13 @@
    
 4.`sudo umonunt /mnt/SSD`
 
+
+### ノートpc側で確認したいとき
+
+
+`roslaunch raspicat_slam_navigation slam_remote_pc.launch`
+
+
 # .bagをRvizで再生する
 1.  `rosbag　decompress　~.bag`(解凍)
 2.  .bashrcのipをlocalhostに直す

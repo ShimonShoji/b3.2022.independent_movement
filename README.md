@@ -39,7 +39,7 @@
    `rosbag record -j -O 建物の名前.bag /cmd_vel /odom /scan /tf /tf_static`(圧縮)
 
    
-4.`sudo umonunt /mnt/SSD`
+4.`sudo umount /mnt/SSD`
 
 
 ### ノートpc側で確認したいとき
